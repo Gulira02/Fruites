@@ -1,30 +1,14 @@
-public class Vitamin {
-    private String vitaminsApples;
-    private String vitaminsOrange;
+public class VitaminBanana {
+
+
     private String vitaminsBananas;
 
-    public Vitamin(String vitaminsApples, String vitaminsOrange, String vitaminsBananas) {
-        this.vitaminsApples = vitaminsApples;
-        this.vitaminsOrange = vitaminsOrange;
+    public VitaminBanana(String vitaminsBananas) {
         this.vitaminsBananas = vitaminsBananas;
     }
-    public Vitamin(){}
+    public VitaminBanana(){}
 
-    public String getVitaminsApples() {
-        return vitaminsApples;
-    }
 
-    public void setVitaminsApples(String vitaminsApples) {
-        this.vitaminsApples = vitaminsApples;
-    }
-
-    public String getVitaminsOrange() {
-        return vitaminsOrange;
-    }
-
-    public void setVitaminsOrange(String vitaminsOrange) {
-        this.vitaminsOrange = vitaminsOrange;
-    }
 
     public String getVitaminsBananas() {
         return vitaminsBananas;
@@ -32,5 +16,12 @@ public class Vitamin {
 
     public void setVitaminsBananas(String vitaminsBananas) {
         this.vitaminsBananas = vitaminsBananas;
+    }
+
+    @Override
+    public String toString() {
+        return "VitaminBanana{" +
+                "vitaminsBananas='" + vitaminsBananas + '\'' +
+                '}';
     }
 }
